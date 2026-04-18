@@ -16,7 +16,8 @@ console.log($notes)
   {#if note.bg}  
       <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
       <a href={`/${index + 1}`} >
-        <div class="bg-{note.bg} rounded-2xl p-4  border-l-3 border-celadon-100 mt-4 shadow-l" >
+        <div style="background-color: {note.bg ? note.bg : 'white'}" class="rounded-2xl p-4 border-l-3 border-celadon-100 mt-4 shadow-l">
+
             <p class="text-3xl font-bold mb-3">Note {index +1}</p>
             <p>{note.title}</p>
             <p class="my-4">Created At {note.added}</p>

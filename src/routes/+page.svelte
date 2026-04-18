@@ -35,7 +35,7 @@ import { fly } from 'svelte/transition';
     });
 
     //note object state
-    let noteInfo = $state({ title: "", content: "", date:day + "/" + month + "/" + year+"  " + time, bg:"yellow-200"});
+    let noteInfo = $state({ title: "", content: "", date:day + "/" + month + "/" + year+"  " + time, bg:"#F2EF91"});
 
     export function triggerToast(msg: string) {
         toastMessage = msg;
@@ -59,10 +59,10 @@ import { fly } from 'svelte/transition';
         
 
         //changing bg color
-        if (noteInfo.bg === "yellow-200") {
-            noteInfo.bg = "celadon"
+        if (noteInfo.bg === "#F2EF91") {
+            noteInfo.bg = "#B5DCB0"
         } else {
-            noteInfo.bg = "yellow-200"
+            noteInfo.bg = "#F2EF91"
         }
 
         // Creating the object
