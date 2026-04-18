@@ -34,9 +34,9 @@
 
     <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
     <a href="/">
-        <img class="absolute sm:left-10 left-5" width="40" height="40" src="https://img.icons8.com/pulsar-color/48/home-page.png" alt="">
+        <img class="absolute sm:left-10 left-5" width="35" height="35" src="https://img.icons8.com/pulsar-color/48/home-page.png" alt="">
     </a>
-    <h1 class="sm:ms-0 ms-10 text-3xl font-bold mb-4 text-gray-600 text-center">Note Keeping App📝</h1>
+    <h1 class="sm:ms-0 ms-10 text-2xl font-bold mb-4 text-gray-600 text-center">Note Keeping App📝</h1>
    
     <div class="flex justify-center mb-4 mt-10">
         <img width="250" height="250" class="rounded-full " src="https://epe.brightspotcdn.com/dims4/default/de2095e/2147483647/strip/true/crop/7062x4792+34+0/resize/840x570!/quality/90/?url=https%3A%2F%2Fepe-brightspot.s3.us-east-1.amazonaws.com%2Fb9%2Fd3%2F8a6831fc4711b36f463f6dc720b1%2Freading-struggles-102025-1819843065.jpg" alt="">
