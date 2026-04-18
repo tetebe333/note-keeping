@@ -3,7 +3,6 @@ import { notes, type Note  } from '$lib/stores.svelte';
 import NoteList from './noteList.svelte';
 import { noteAction } from '$lib/stores.svelte';
 import { fly } from 'svelte/transition';
-import { goto } from '$app/navigation';
 
     //btn state
     let btnState = $state(true);
@@ -256,7 +255,7 @@ import { goto } from '$app/navigation';
 
 {#if showAlert}
 <!-- Overlay -->
-<div class="fixed inset-0 bg-black/40 backdrop-blur-[2px] z-[100] flex items-center justify-center p-4">
+<div class="fixed inset-0 bg-black/40 backdrop-blur-[2px] z-100 flex items-center justify-center p-4">
     <!-- Alert Box -->
     <div class="bg-white rounded-2xl p-6 max-w-sm w-full shadow-2xl border-t-4 border-amber-500 animate-in fade-in zoom-in duration-200">
         <div class="flex items-center gap-3 mb-3">
