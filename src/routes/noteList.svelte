@@ -1,7 +1,6 @@
 <script lang="ts">
 import { notes } from '$lib/stores.svelte';
 let { openDeleteModal, edithFunction} = $props();
-console.log($notes)
 
 </script>
 
