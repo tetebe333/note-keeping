@@ -35,7 +35,7 @@ import { fly } from 'svelte/transition';
     });
 
     //note object state
-    let noteInfo = $state({ title: "", content: "", date:day + "/" + month + "/" + year+"  " + time, bg:"lightGold"});
+    let noteInfo = $state({ title: "", content: "", date:day + "/" + month + "/" + year+"  " + time, bg:"yellow-200"});
 
     export function triggerToast(msg: string) {
         toastMessage = msg;
@@ -59,10 +59,10 @@ import { fly } from 'svelte/transition';
         
 
         //changing bg color
-        if (noteInfo.bg === "lightGold") {
+        if (noteInfo.bg === "yellow-200") {
             noteInfo.bg = "celadon"
         } else {
-            noteInfo.bg = "lightGold"
+            noteInfo.bg = "yellow-200"
         }
 
         // Creating the object
@@ -232,6 +232,7 @@ import { fly } from 'svelte/transition';
             <label class="text-gray-600 font-medium absolute left-4 top-3 " for="title">Content:</label>
             <textarea bind:value={noteInfo.content} class="text-gray-700 ps-20 w-full pt-2 pb-3 input h-30" id="content"></textarea>
         </div>
+        
         {#if btnState}
             <button class=" shadow-lg btn font-semibold px-3 py-1 sm:bg-green-600 bg-amber-500 text-white rounded mt-4 sm:hover:bg-amber-500 hover:bg-green-500">Add Note</button>
         {/if}
